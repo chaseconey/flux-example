@@ -1,0 +1,1 @@
+{"jobID":"a4bb2318-ca04-f503-4cc1-29d19ee3c3fa","spec":{"type":"policy","cause":{"Message":"","User":"Chase Coney \u003cchasiepoo@gmail.com\u003e"},"spec":{"default:deployment/helloworld":{"add":{"automated":"true"},"remove":{}}}},"result":null}
