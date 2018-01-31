@@ -4,7 +4,7 @@ all: .helloworld
 REV=a000001
 
 .helloworld: helloworld-linux-amd64 Dockerfile
-	docker build -t quay.io/weaveworks/helloworld:master-${REV} .
+	docker build -t quay.io/chaseconey/helloworld:master-${REV} .
 	touch $@
 
 helloworld-linux-amd64: helloworld.go
@@ -13,4 +13,3 @@ helloworld-linux-amd64: helloworld.go
 .PHONY: clean
 clean:
 	rm -f .helloworld helloworld-linux-amd64
-

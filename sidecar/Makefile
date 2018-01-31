@@ -4,7 +4,7 @@ all: .sidecar
 REV=a000002
 
 .sidecar: sidecar-linux-amd64 Dockerfile
-	docker build -t quay.io/weaveworks/sidecar:master-${REV} .
+	docker build -t quay.io/chaseconey/sidecar:master-${REV} .
 	touch $@
 
 sidecar-linux-amd64: sidecar.go Makefile
@@ -13,4 +13,3 @@ sidecar-linux-amd64: sidecar.go Makefile
 .PHONY: clean
 clean:
 	rm -f .sidecar sidecar-linux-amd64
-
